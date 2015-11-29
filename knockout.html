@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Two Way Binding</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+	</head>
+	<body class="container">
+		<header class="page-header">
+			<h1 class="row">Bill Of Lading</h1>
+		</header>
+		<div class="row">
+			<div class="input-group">
+				<input type="text" name="blNumber" placeholder="Number" class="form-control" data-bind="value: blNumber">
+				<span class="input-group-btn">
+					<button type="button" class="btn btn-primary" data-bind="click: getDataFromServer">Load</button>
+				</span>
+			</div>
+			<div class="form-group">
+			</div>
+			<div class="form-group">
+				<input type="text" name="importer" placeholder="Importer"  class="form-control" data-bind="value: importer">
+			</div>
+			<div class="input-group">
+				<input type="text" name="consignee" placeholder="Consignee" class="form-control" data-bind="value: consignee.code">
+				<span class="input-group-btn">
+					<button type="button" class="btn btn-primary" data-bind="click: getConsigneeInfo">Load</button>
+				</span>
+			</div>
+			<div class="form-group">
+			</div>
+			<div class="form-group">
+				<div class="well" data-bind="text: consigneeInfo"></div>
+			</div>
+		</div>
+
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+		<script src="knockoutMain.js"></script>
+	</body>
+</html>

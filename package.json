@@ -1,0 +1,15 @@
+{
+  "name": "two-way-binding",
+  "version": "1.0.0",
+  "description": "Analisis de alternativas para un framework frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alberto Cruz",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3"
+  }
+}
